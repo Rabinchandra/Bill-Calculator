@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" style="width: 500px;">
+        <form class="form-group form">
+            <label for="name" class="mt-4">Employee name :</label>
+            <input type="text" class="form-control" id="name" autocomplete="off"/>
+
+            <label for="increment_percent" class="mt-4">Increment by what percent :</label>
+            <input type="number" class="form-control" id="increment_percent" autocomplete="off" required/>
+
+            <label for="pb" class="mt-4">P.B.</label>
+            <input type="number" class="form-control" id="pb"  autocomplete="off" required/>
+
+            <label for="gp" class="mt-4">G.P.</label>
+            <input type="text" class="form-control" id="gp"  autocomplete="off" required/>
+            
+            <label for="sca" class="mt-4">SCA</label>
+            <input type="number" class="form-control" id="sca"  autocomplete="off" required/>
+            
+            <label for="ta" class="mt-4">TA</label>
+            <input type="number" class="form-control" id="ta" autocomplete="off" required>
+            
+            <button type="submit" class="btn btn-success mt-4 btn-block" id="calculate">Calculate</button>
+        </form>
+        <button class="btn btn-primary btn-block mt-2" id="load-data">Load Data</button>
+    </div>
+    <div class="container mt-5 text-center">
+        <table class="result table">
+            <thead class="bg-dark text-white">
+                <th>Name</th>
+                <th>Basic (GP + PB)</th>
+                <th>Officiating Pay</th>
+                <th>DA</th>
+                <th>HRA</th>
+                <th>SCA</th>
+                <th>TA</th>
+                <th>Gross</th>
+                <th></th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div style="height: 400px;"></div>
+    <script src="app.js"></script>
+</body>
+</html>
